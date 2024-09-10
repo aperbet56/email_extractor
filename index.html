@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extracteur d'adresse mail</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Extracteur d'adresse mail</h1>
+    </header>
+    <main class="main__content">
+      <section class="container">
+        <form class="form">
+          <textarea
+            name=""
+            id="extractor"
+            placeholder="Tapez une ou plusieurs adresse(s) mail"
+          ></textarea>
+          <button type="submit" id="submit">Extraire</button>
+        </form>
+        <div class="output__container">
+          <h2 class="total"></h2>
+          <ol class="output"></ol>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Site créé par aperbet56</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
