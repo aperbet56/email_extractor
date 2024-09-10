@@ -1,0 +1,135 @@
+/**** Reset ****/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+}
+
+/**** Variables CSS ****/
+:root {
+  --container: 100rem;
+  --white: #ffffff;
+  --yellow :#f4b41a;
+  --blue : #143d59;
+}
+
+/**** Style général de la page ****/
+
+html,
+body {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-radius: 8px ;
+    padding: 1rem;
+}
+
+h1, footer span {
+    text-align: center;
+}
+
+.main__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    max-width: var(--container);
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+#extractor {
+    margin-top: 3rem;
+    height: 25rem;
+    resize: none;
+    outline: none;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#submit {
+    background-color: var(--blue);
+    padding: 1rem 2rem;
+    display: inline-block;
+    color: var(--white);
+    font-size: 2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#submit:hover {
+    box-shadow: 0 0 0.3rem var(--blue);
+}
+
+ol {
+    margin-left: 1.6rem;
+}
+
+li {
+    padding: 0.5rem 0;
+    font-size: 1.6rem;
+}
+
+.output__container {
+    background-color: var(--white);
+    box-shadow: 0 0 0.3rem var(--blue);
+    color: var(--blue);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 2rem 0;
+    display: none;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2,
+.output {
+    margin-bottom: 0.8rem;
+}
+
+footer span {
+    font-size: 2rem;
+    font-weight: 600;
+}
